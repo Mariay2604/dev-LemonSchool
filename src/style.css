@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -96,3 +96,39 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.page-nav {
+  display: flex;
+  width: 99vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 50px;
+  background: #575fcf;
+}
+
+.page-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-nav a:hover {
+  color: #ef5777;
+}
+
+.navigation-link {
+  position: fixed;
+  left: 25px;
+  bottom: 25px;
+  background: #ef5777;
+  padding: 9px 24px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.navigation-link:hover {
+  background-color: #575fcf;
+} */
