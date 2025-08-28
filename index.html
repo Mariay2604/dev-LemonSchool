@@ -5,64 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
-    <title>Vite App</title>
+    <title>LemonSchool</title>
   </head>
-  <body class="bg-red-100">
-    <main>
-      <h1
-        class="font-semibold text-teal-950 text-4xl lg:text-7xl mt-8 lg:mt-14 mb-14 lg:mb-28"
-      >
-        Page title
-      </h1>
-      <section
-        class="example bg-teal-800 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24"
-      >
-        <div class="container mx-auto px-3">
-          <h2 class="font-semibold text-white text-3xl pt-3 pb-6">
-            example-title
-          </h2>
-          <p class="text-white">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-            minima ut numquam at sed amet placeat optio nam inventore architecto
-            ipsam cupiditate delectus tenetur. Adipisci reiciendis fugiat
-            consequatur nam voluptatem?
-          </p>
-          <p class="text-white">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-            minima ut numquam at sed amet placeat optio nam inventore architecto
-            ipsam cupiditate delectus tenetur. Adipisci reiciendis fugiat
-            consequatur nam voluptatem?
-          </p>
-        </div>
-      </section>
 
-      <section
-        class="example bg-teal-900 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24"
-      >
-        <div class="container mx-auto px-3">
-          <h2 class="font-semibold text-white text-3xl pt-3 pb-6">
-            example-title
-          </h2>
-          <p class="text-white">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-            minima ut numquam at sed amet placeat optio nam inventore architecto
-            ipsam cupiditate delectus tenetur. Adipisci reiciendis fugiat
-            consequatur nam voluptatem?
-          </p>
-          <p class="text-white">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
-            minima ut numquam at sed amet placeat optio nam inventore architecto
-            ipsam cupiditate delectus tenetur. Adipisci reiciendis fugiat
-            consequatur nam voluptatem?
-          </p>
-        </div>
-      </section>
-    </main>
-    <a
-      href="nav.html"
-      class="fixed left-6 bottom-6 bg-pink-500 text-white rounded-full py-1 px-3 hover:bg-pink-600"
-      >nav</a
-    >
+  <body class="bg-stone">
+    {{> header logo='/public/logo.svg'}} {{> page-title title="LemonSchool"
+    subtitle="subtitle"}} {{> footer }}
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

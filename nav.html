@@ -5,9 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
-    <title>Vite App</title>
+    <title>nav</title>
   </head>
-  <body class="bg-indigo-600">
+  <body class="bg-stone">
+    {{> header logo='/public/logo.svg'}}
     <nav
       class="flex flex-col justify-center items-center min-h-screen md:gap-y-5 gap-y-3"
     >
@@ -82,5 +83,7 @@
         >@media</a
       >
     </nav>
+    {{> footer }}
+    <script src="/src/main.js"></script>
   </body>
 </html>
