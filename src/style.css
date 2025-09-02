@@ -1,11 +1,11 @@
-@import url("https://fonts.google.com/specimen/Funnel+Display");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&family=Funnel+Display:wght@300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --color-stone: #222831;
-  --color-neutral: #393e46;
-  --color-cyan: #1bf5ff;
-  --color-brand-text: #eeeeee;
+  --color-stone: #333446;
+  --color-neutral: #B8CFCE;
+  --color-cyan: #EAEFEF;
+  --color-white: #eeeeee;
 
   --text-h1: 48px;
   --text-h2: 42px;
@@ -18,15 +18,22 @@
   --padding-template: 100px;
 
   --font-funnel-display: "Funnel Display", sans-serif;
+  --font-nunito-sana: "Nunito Sans", sans-serif;
+  --font-amarante: "Amarante", serif;
 }
 
 @layer components {
   body {
     font-family: var(font-funnel-display);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    color: var(--font-white);
   }
 
   h1 {
     font-size: var(text-h1);
     color: var(color-cyan);
   }
+
 }
