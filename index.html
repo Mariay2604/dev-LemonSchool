@@ -9,8 +9,15 @@
   </head>
 
   <body class="bg-stone">
-    {{> header logo='/public/logo.svg' }} 
+    {{> header logo='/public/logo.svg'}} 
     {{> page-title title="LemonSchool" subtitle="subtitle"}} 
+
+    <div class="container mx-auto px-3 max-w-5xl font-sen text-white bg-black">
+    {{> header-portfolio}}
+    {{> banner }}
+      
+    </div>
+
     {{> footer }}
     <script src="/src/main.js"></script>
   </body>
