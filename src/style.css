@@ -38,7 +38,7 @@
   }
 
   h1 {
-    font-size: var(text-h1);
+    font-size: var(--text-h1);
     color: var(color-cyan);
   }
 
