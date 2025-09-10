@@ -9,6 +9,7 @@
   --color-purple: #5221E6;
   --color-neutral-300: #c4c4c4;
   --color-indigo-950: #181823;
+  --color-gray-400: #808080;
 
   --text-h1: 48px;
   --text-h2: 42px;
@@ -40,6 +41,18 @@
   h1 {
     font-size: var(--text-h1);
     color: var(color-cyan);
+  }
+
+  .banner-title {
+    font-size: 32px;
+
+    @media (min-width: 768px) {
+      font-size: 56px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 78px;
+    }
   }
 
 [alt=""] {
