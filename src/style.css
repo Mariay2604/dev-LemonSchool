@@ -10,6 +10,7 @@
   --color-neutral-300: #c4c4c4;
   --color-indigo-950: #181823;
   --color-gray-400: #808080;
+  --color-gray-500: #8491A0;
 
   --text-h1: 48px;
   --text-h2: 42px;
@@ -17,6 +18,7 @@
   --text-h4: 28px;
   --text-h5: 24px;
   --text-h6: 20px;
+  --text-9xl: 117px;
 
   --margin-template: 100px;
   --padding-template: 100px;
@@ -26,7 +28,8 @@
   --font-amarante: "Amarante", sans-serif;
   --font-sen: "Sen", sans-serif;
 
-  --container-5xl: 1464px;
+  --container-5xl: 1320px;
+  --container-7xl: 1464px;
 }
 
 @layer components {
@@ -54,6 +57,7 @@
       font-size: 78px;
     }
   }
+
 
 [alt=""] {
   filter: blur(10px);
