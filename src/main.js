@@ -1,40 +1,16 @@
-// // import './style.css'
-// // import javascriptLogo from './javascript.svg'
-// // import viteLogo from '/vite.svg'
-// // import { setupCounter } from './counter.js'
-
-// // document.querySelector('#app').innerHTML = `
-// //   <div>
-// //     <a href="https://vite.dev" target="_blank">
-// //       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-// //     </a>
-// //     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-// //       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-// //     </a>
-// //     <h1>Hello Vite!</h1>
-// //     <div class="card">
-// //       <button id="counter" type="button"></button>
-// //     </div>
-// //     <p class="read-the-docs">
-// //       Click on the Vite logo to learn more
-// //     </p>
-// //   </div>
-// `
-
-// // setupCounter(document.querySelector('#counter'))
-
+window.addEventListener('load', ()=> {
 const getLoremImage = () => {
-  const images = document.querySelectorAll("img");
+        const images = document.querySelectorAll('img');
 
-  images.forEach((item) => {
-    if (!item.getAttribute("src")) {
-      fetch("https://picsum.photos/640/360")
-        .then((response) => response.blob())
-        .then((blob) => (item.src = URL.createObjectURL(blob)))
-        .catch((error) => (item.src = "assets/img/cat-scottish.webp"));
-    }
-  });
-};
+        images.forEach(item => {
+            if (!item.getAttribute('src')) {
+                fetch('https://picsum.photos/332/420')
+                    .then(response => response.blob())
+                    .then(blob => item.src = URL.createObjectURL(blob))
+                    .catch(error => item.src = "assets/img/cat-scottish.webp");
+            }
+        });
+    };
 
 const burgerBtn = document.querySelector('#burger');
 const mobileContainer = document.querySelector('#mobile-container');
@@ -47,5 +23,56 @@ burgerBtn.addEventListener('click', ()=> {
   body.classList.toggle('overflow-hidden')
 })
 
-document.querySelectorAll("img").length > 0 ? getLoremImage() : null;
 
+const tabs = document.querySelectorAll('.tabs')
+
+const installTabs =()=> {
+  const tabsButtons = document.querySelectorAll('[data-tab-content]')
+  const tabContent = document.querySelectorAll('.tab-content')
+
+  const removeActiveClassForNav =()=> {
+    tabsButtons.forEach(item => item.classList.remove('bg-purple'))
+  }
+
+
+  const hiddenContentTabs =()=> {
+    tabContent.forEach(item => item.classList.add('hidden'))
+  }
+
+  tabsButtons.forEach((item, index, array)=>{
+    const tabsButtons = item.getAttribute('data-tab-content');
+
+    item.addEventListener('click', ()=> {
+      removeActiveClassForNav()
+      item.classList.add('bg-purple')
+      const showContent = document.getElementById(tabsButtons)
+      hiddenContentTabs()
+      showContent.classList.remove('hidden')
+    })
+  })
+}
+
+let partnerSwiper;
+
+function initSwiper () {
+  if (window.innerWidth >= 768 && !partnerSwiper) {
+     partnerSwiper = new Swiper(".swiper", {
+      slidesPerView: 6,
+      breakpoints: {
+        1024: { slidesPerView: 4 },
+        768: { slidesPerView: 3 },
+      },
+     });
+  } else if (window.innerWidth < 768 && !partnerSwiper) {
+    partnerSwiper.destroy(true, true);
+    partnerSwiper = null;
+  }
+}
+
+window.addEventListener("load", initSwiper);
+window.addEventListener("resize", initSwiper);
+
+document.querySelectorAll('.tabs').length ? installTabs() : null;
+document.querySelectorAll('img').length ? getLoremImage() : null;
+
+})

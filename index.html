@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet" />
-    <title>LemonSchool</title>
-  </head>
 
-  <body class="bg-stone">
-    {{> header logo='/public/logo.svg'}} 
-    {{> page-title title="LemonSchool" subtitle="subtitle"}} 
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link href="/src/style.css" rel="stylesheet" />
+  <title>LemonSchool</title>
+</head>
 
-    <div class="mx-auto px-3 max-w-7xl font-sen text-white bg-black">
+<body class="bg-stone">
+  {{> header logo='/public/logo.svg'}}
+  {{> page-title title="LemonSchool" subtitle="subtitle"}}
+
+  <div class="mx-auto px-3 max-w-7xl font-sen text-white bg-black">
     {{> header-portfolio}}
     {{> banner }}
+    <button type="button" id="triger" class="px-8 py-3 bg-amber-300 hover:bg-amber-200 cursor-pointer">Triger</button>
     {{> experience }}
     {{> philosophy }}
     {{> skillset }}
+    {{> partners }}
+    {{> tabs }}
     {{> instagram }}
-      
-    </div>
 
-    {{> footer }}
-    <script src="/src/main.js"></script>
-  </body>
+
+  </div>
+
+  {{> footer }}
+  {{> modal }}
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="/src/modal.js"></script>
+  <script src="/src/main.js"></script>
+</body>
+
 </html>
