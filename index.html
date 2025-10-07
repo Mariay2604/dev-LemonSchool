@@ -13,23 +13,27 @@
 <body class="bg-stone">
   {{> header logo='/public/logo.svg'}}
   {{> page-title title="LemonSchool" subtitle="subtitle"}}
+      <button type="button" data-triger="modal-login" class="px-8 py-3 bg-amber-300 hover:bg-amber-200 cursor-pointer">modal-login</button>
+      <button type="button" data-triger="modal-register" class="px-8 py-3 bg-amber-300 hover:bg-amber-200 cursor-pointer">modal-register</button>
+      <button type="button" data-triger="modal-1" class="px-8 py-3 bg-amber-300 hover:bg-amber-200 cursor-pointer">modal-1</button>
+      <button type="button" data-triger="modal-2" class="px-8 py-3 bg-amber-300 hover:bg-amber-200 cursor-pointer">modal-2</button>
 
-  <div class="mx-auto px-3 max-w-7xl font-sen text-white bg-black">
+      <div class="bg-black">
+       <div class="mx-auto px-3 max-w-7xl font-sen text-white bg-black">
     {{> header-portfolio}}
     {{> banner }}
-    <button type="button" id="triger" class="px-8 py-3 bg-amber-300 hover:bg-amber-200 cursor-pointer">Triger</button>
     {{> experience }}
     {{> philosophy }}
+    {{> tabs }}
     {{> skillset }}
     {{> partners }}
-    {{> tabs }}
+    {{> progects }}
     {{> instagram }}
 
-
+   </div>
   </div>
 
   {{> footer }}
-  {{> modal }}
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="/src/modal.js"></script>
   <script src="/src/main.js"></script>

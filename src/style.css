@@ -71,4 +71,8 @@
   width: 600px;
   height: 300px;
 }
+
+.modal.show: last-of-type{
+  z-index: 30;
+}
 }
