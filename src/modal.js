@@ -8,13 +8,14 @@ window.addEventListener('load', ()=> {
             triger.addEventListener('click', ()=> {
                 const trigerData = triger.getAttribute('data-triger')
                 document.getElementById(trigerData).classList.add('show')
-            modal.classList.add('show')
+           
         })
     })
 
          modalCloseTriger.forEach(button => {
             button.addEventListener('click', ()=> {
                 document.querySelector('.modal.show').classList.remove('show')
+                button.closest('.modal').classList.remove('show')
             })
         })
     }
