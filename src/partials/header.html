@@ -1,8 +1,15 @@
-<header class="py-10 bg-neutral border-b-1 text-white">
-  <div class="max-w-7xl mx-auto px-3">
-    <a href="index.html">
-      <img src="{{logo}}" alt="логотип" class="site-logo" />
-    </a>
-  </div>
-</header>
-<main>
+      <header class="flex items-center relative py-6 md:py-0 md:-mb-22 z-10">
+        <div class="w-19.5 h-6"><img src="/public/logoRobin.svg" alt="logo Robin"></div>
+        <div id="mobile-container" class="md:ml-auto hidden md:block absolute md:static bg-indigo-950 md:bg-transparent top-18 -left-3 w-[calc(100%+24px)] md:w-auto">
+        <nav class="flex flex-col md:flex-row">
+          <a href="#" class="py-7.75 px-5.75 flex font-bold leading-[1.5] hover:bg-purple transition duration-300">Experience</a>
+          <a href="#" class="py-7.75 px-5.75 flex font-bold leading-[1.5] hover:bg-purple transition duration-300">Work</a>
+          <a href="#" class="py-7.75 px-5.75 flex font-bold leading-[1.5] hover:bg-purple transition duration-300">Photography</a>
+          <a href="#" class="py-7.75 px-5.75 flex font-bold leading-[1.5] hover:bg-purple transition duration-300">Contact</a>
+        </nav>
+        </div>
+        <button id="burger" class="relative w-6 h-6 cursor-pointer ml-auto before:absolute before:w-4.5 before:bg-neutral-300 before:h-0.75 before:top-1 before:left-1 
+        after:absolute after:w-3.75 after:bg-neutral-300 after:h-0.75 after:top-4 after:right-1 hover:before:bg-purple hover:after:bg-purple md:hidden">
+
+        </button>
+      </header>
